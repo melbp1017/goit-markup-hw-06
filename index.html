@@ -76,31 +76,31 @@
             <form method="post" action="index.html">
             <div class="modal-form">
               
-              <div class="modal-form-info">
-                <label for="name"> Name </label>
+              
+                <label class="form-label" for="name"> Name </label>
+                <div class="modal-form-info">
                 <svg class="icon-form" >
                       <use xlink:href="images/icons.svg#icon-person"></use></svg>
-                    
-                <input type="text" class="form-control" placeholder="Your Name" id="name" name="name" required />
+                <input type="text" class="form-control" id="name" name="name" required />
               </div>
 
+              <label class="form-label" for="phone">Phone </label>
               <div class="modal-form-info">
-                <label class="form-label" for="phone">Phone </label>
                 <svg class="icon-form" >
                       <use xlink:href="images/icons.svg#icon-phone"></use></svg> 
-                <input type="tel" class="form-control" id="phone" placeholder="+63xx-xxx-xxxx" name="phone" required />
+                <input type="tel" class="form-control" id="phone" name="phone" required />
               </div>
 
+                <label class="form-label" for="email"> Email </label>
               <div class="modal-form-info">
-                <label for="email"> Email </label>
                 <svg class="icon-form" >
                       <use xlink:href="images/icons.svg#icon-email"></use></svg>
-                      <input type="email" class="form-control" placeholder="Your Email" id="email" name="email" required />
+                      <input type="email" class="form-control" id="email" name="email" required />
               </div>
 
+                <label class="form-label" for="comment">Comment</label>
               <div class="modal-form-info">
-                <label for="comment">Comment</label>
-                 <textarea class="form-control" placeholder="Enter your comment here." id="comment" name="comment" required></textarea>
+                 <textarea class="form-control text-comment" placeholder="Enter your comment here." id="comment" name="comment" required></textarea>
               </div>
 
               <div class="modal-form-info">
@@ -110,7 +110,7 @@
                 </div>
               </div>
               </div>
-            <button type="send" class="button-send btn-primary">Send</button>
+            <div class="send"><button type="send" class="button-send btn-primary">Send</button></div>
             </form>
         </div>
         

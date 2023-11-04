@@ -285,9 +285,6 @@ body {
     flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
-    transition:250ms;
-    transition-property: color,border-color, background-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-info{
     color: #8E8F99;
@@ -298,15 +295,22 @@ body {
     letter-spacing: 0.48px;
     position:relative;
     display: inline-block;
+    
 }
-
+.form-label{
+    color: #8E8F99;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17em;
+    letter-spacing: 0.48px;
+}
 .icon-form{
     width: 18px;
     height: 18px;
     flex-shrink: 0;
 
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 8px;
     z-index: 4;
      /* Adjust the right position as needed */
@@ -314,17 +318,17 @@ body {
     /* Adjust the color of the SVG icon */
 }
 
-.icon-form:hover {
-    fill: var(--iris);
-}
-.form-control:hover{
-    border-color: var(--iris);
-}
 .form-confirm{
     display: flex;
     width: 360px;
     align-items: center;
     gap: 8px;
+}
+.text-comment{
+    height: 120px;
+    width:360px;
+    resize: none;
+    padding:15px;
 }
 .terms{
     color: var(--iris);
@@ -352,6 +356,10 @@ body {
     border-radius: 4px;
     background: var(--iris);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.send{
+    display:flex;
+    justify-content: center;
 }
 /*section one*/
 .section-one {
