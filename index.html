@@ -70,7 +70,51 @@
             <svg class="icon-close" >
                       <use xlink:href="images/icons.svg#icon-close"></use></svg>
           </button>
+         
+          <div class="modal-body">
+            <h2 class="modal_header">Leave your contacts and we will call you back</h2>
+            <form method="post" action="index.html">
+            <div class="modal-form">
+              
+              <div class="modal-form-info">
+                <label for="name"> Name </label>
+                <svg class="icon-form" >
+                      <use xlink:href="images/icons.svg#icon-person"></use></svg>
+                    
+                <input type="text" class="form-control" placeholder="Your Name" id="name" name="name" required />
+              </div>
+
+              <div class="modal-form-info">
+                <label class="form-label" for="phone">Phone </label>
+                <svg class="icon-form" >
+                      <use xlink:href="images/icons.svg#icon-phone"></use></svg> 
+                <input type="tel" class="form-control" id="phone" placeholder="+63xx-xxx-xxxx" name="phone" required />
+              </div>
+
+              <div class="modal-form-info">
+                <label for="email"> Email </label>
+                <svg class="icon-form" >
+                      <use xlink:href="images/icons.svg#icon-email"></use></svg>
+                      <input type="email" class="form-control" placeholder="Your Email" id="email" name="email" required />
+              </div>
+
+              <div class="modal-form-info">
+                <label for="comment">Comment</label>
+                 <textarea class="form-control" placeholder="Enter your comment here." id="comment" name="comment" required></textarea>
+              </div>
+
+              <div class="modal-form-info">
+                <div class="form-confirm">
+                <input type="checkbox" id="accept-terms" name="accept-terms">
+                <label for="accept-terms">I accept the terms and conditions of the <span class="terms">Privacy Policy</span></label>
+                </div>
+              </div>
+              </div>
+            <button type="send" class="button-send btn-primary">Send</button>
+            </form>
         </div>
+        
+      </div>
       </div>
       </div>
     </section>
